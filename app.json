@@ -1,0 +1,15 @@
+{
+    "id": "/riemann-mesos-app",
+
+    "cpus": 0.1,
+    "mem": 64.0,
+
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "mesoscloud/riemann-mesos-app",
+
+            "network": "HOST"
+        }
+    }
+}
