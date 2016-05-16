@@ -1,6 +1,8 @@
 {
     "id": "/riemann-mesos-app",
 
+    "cmd": "riemann-mesos -h $HOST -s $HOST",
+
     "cpus": 0.1,
     "mem": 64.0,
 
@@ -9,7 +11,7 @@
         "docker": {
             "image": "mesoscloud/riemann-mesos-app",
 
-            "network": "HOST"
+            "network": "BRIDGE"
         }
     }
 }
